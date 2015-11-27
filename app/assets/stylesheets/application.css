@@ -35,3 +35,7 @@ body {
 .navbar-right{
 padding-right: 10px;
 }
+
+.alert {
+    margin-top: 10px;
+}
