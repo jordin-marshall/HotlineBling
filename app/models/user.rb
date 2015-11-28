@@ -6,12 +6,18 @@ class User < ActiveRecord::Base
     
     validates :first_name, presence: true
     validates :last_name, presence: true
-    validates :profile_name, presence: true,
-                             uniqueness: true,
-                             format: {
-                                 with: /\A[a-zA-Z0-9_-]+\z/,
-                                 message: 'Must be formatted correctly.'
-                                 }
+    #validates :profile_name, presence: true,
+                            # uniqueness: true,
+                             #format: {
+                                 #with: /\A[a-zA-Z0-9_-]+\z/,
+                                 #message: 'Must be formatted correctly.'
+                                 #}
+     validates :profile_name, 
+                format: {   
+                    with: /^[a-zA-Z0-9-]+$/, 
+                    message: "must be formatted correctly.",
+                    :multiline => true
+                    }
                     
     
     
@@ -21,3 +27,4 @@ class User < ActiveRecord::Base
         first_name.to_s + " " + last_name.to_s 
     end
 end
+
