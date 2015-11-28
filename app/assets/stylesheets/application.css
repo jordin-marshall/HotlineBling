@@ -15,7 +15,7 @@
  */
 
 body {
-    padding-top: 50px;
+    padding-top: 55px;
     background-image: url("http://is4.mzstatic.com/image/thumb/Video4/v4/79/66/a3/7966a3d5-f85e-20ea-8918-aaf6bbd84b23/source/1920x1080sr.jpg")
 }
 
@@ -33,9 +33,13 @@ body {
 }
 
 .navbar-right{
-padding-right: 10px;
+padding-right: 50px;
 }
 
 .alert {
     margin-top: 10px;
+}
+
+.span8 h2 {
+    font-size: 1.5em;
 }
